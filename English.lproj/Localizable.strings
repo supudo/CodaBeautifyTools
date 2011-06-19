@@ -1,4 +1,6 @@
 "MainTitle" = "Beautify Tools";
 "Format" = "Format";
 "CSS" = "CSS";
+"Format1Line" = "Format 1-line-elements";
+"FormatMultiline" = "Format Multiline";
 "About" = "About";
