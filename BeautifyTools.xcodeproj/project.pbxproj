@@ -11,6 +11,7 @@
 		8A7CF17613ABA9D80039EB91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8A7CF1B813ABAE140039EB91 /* About.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8A7CF1B713ABAE140039EB91 /* About.nib */; };
 		8A7CF1DA13ABB0180039EB91 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A7CF1D913ABB0180039EB91 /* Localizable.strings */; };
+		8A8D469913AE54D6006EC1AC /* CSSFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D469813AE54D6006EC1AC /* CSSFormatter.m */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,8 @@
 		8A7CF15213ABA90F0039EB91 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/About.nib; sourceTree = "<group>"; };
 		8A7CF1D513ABB0130039EB91 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8A7CF20C13ABB4A00039EB91 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		8A8D469713AE54D6006EC1AC /* CSSFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSFormatter.h; sourceTree = "<group>"; };
+		8A8D469813AE54D6006EC1AC /* CSSFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSFormatter.m; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* BeautifyTools.codaplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautifyTools.codaplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +81,7 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8A8D469613AE54CE006EC1AC /* CSS */,
 				8A7CF14C13ABA8E60039EB91 /* CodaPlugInsController.h */,
 				6518174F067A8D39005BD953 /* BeautifyTools.h */,
 				65181750067A8D39005BD953 /* BeautifyTools.m */,
@@ -116,6 +120,15 @@
 				32DBCF630370AF2F00C91783 /* BeautifyTools_Prefix.pch */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		8A8D469613AE54CE006EC1AC /* CSS */ = {
+			isa = PBXGroup;
+			children = (
+				8A8D469713AE54D6006EC1AC /* CSSFormatter.h */,
+				8A8D469813AE54D6006EC1AC /* CSSFormatter.m */,
+			);
+			name = CSS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65181752067A8D39005BD953 /* BeautifyTools.m in Sources */,
+				8A8D469913AE54D6006EC1AC /* CSSFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
