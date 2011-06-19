@@ -22,8 +22,8 @@
 - (id) initWithPlugInController:(CodaPlugInsController *)inController bundle:(NSBundle *)yourBundle {
 	if ((self = [super init]) != nil) {
 		[NSBundle loadNibNamed:@"About" owner:self];
-
 		controller = inController;
+
 		[controller registerActionWithTitle:NSLocalizedString(@"Format", @"Format")
 					  underSubmenuWithTitle:NSLocalizedString(@"CSS", @"CSS") target:self selector:@selector(cssFormat:)
 						  representedObject:nil keyEquivalent:@"" pluginName:NSLocalizedString(@"MainTitle", @"MainTitle")];
@@ -115,7 +115,7 @@
 		}
 	}
 	
-	return [NSString stringWithFormat:@"/* Formatted by CSS Formater */\n\n%@", formattedCSS];
+	return formattedCSS;
 }
 
 #pragma mark -
