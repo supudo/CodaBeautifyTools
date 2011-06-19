@@ -19,6 +19,7 @@
 }
 
 - (id) initWithPlugInController:(CodaPlugInsController *)inController bundle:(NSBundle *)yourBundle;
+
 - (IBAction)openURL:(id)sender;
 - (IBAction)closeAbout:(id)sender;
 
